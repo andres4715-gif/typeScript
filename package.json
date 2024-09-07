@@ -8,7 +8,9 @@
     "test": "npx ts-node src/index.ts",
     "inheritance": "node dist/inheritance/index.js",
     "types": "node dist/types/usingTypes.js",
-    "several_types": "node dist/types/usingSeveralTypes.js"
+    "several_types": "node dist/types/usingSeveralTypes.js",
+    "interface": "node dist/interfaces/buyingNewCar.js",
+    "accessors": "node dist/accessors/totalSells.js"
   },
   "keywords": [],
   "author": "",
