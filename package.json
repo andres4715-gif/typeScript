@@ -1,0 +1,20 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc-watch": "tsc --watch",
+    "test": "npx ts-node src/index.ts",
+    "inheritance": "node dist/inheritance/index.js",
+    "types": "node dist/types/usingTypes.js",
+    "several_types": "node dist/types/usingSeveralTypes.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
