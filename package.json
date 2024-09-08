@@ -11,7 +11,8 @@
     "several_types": "node dist/types/usingSeveralTypes.js",
     "interface": "node dist/interfaces/buyingNewCar.js",
     "accessors": "node dist/accessors/totalSells.js",
-    "abstractClass": "node dist/abstractClass/buyCar.js"
+    "abstractClass": "node dist/abstractClass/buyCar.js",
+    "abstractClassWithProperties": "node dist/abstractClass/for_properties/employee.js"
   },
   "keywords": [],
   "author": "",
