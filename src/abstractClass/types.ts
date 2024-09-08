@@ -6,4 +6,5 @@ export type carData = {
   color: string;
   enginePower: number;
   maxSpeed: number;
+  price: number;
 };

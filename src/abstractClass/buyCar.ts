@@ -9,6 +9,7 @@ const search1: carData = {
   color: 'gray',
   enginePower: 2000,
   maxSpeed: 230,
+  price: 56,
 };
 
 const car = new Car(
@@ -18,7 +19,8 @@ const car = new Car(
   search1.hashBack,
   search1.color,
   search1.enginePower,
-  search1.maxSpeed
+  search1.maxSpeed,
+  search1.price
 );
 
 console.log(`--- The model is: ${car.displayCarData()}`);

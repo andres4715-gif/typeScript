@@ -4,6 +4,7 @@ class Car extends Vehicle {
   readonly color: string;
   readonly enginePower: number;
   readonly maxSpeed: number;
+  readonly price?: number;
 
   constructor(
     brand: string,
@@ -12,12 +13,14 @@ class Car extends Vehicle {
     hashBack: boolean,
     color: string,
     enginePower: number,
-    maxSpeed: number
+    maxSpeed: number,
+    price: number
   ) {
     super(brand, model, year, hashBack);
     this.color = color;
     this.enginePower = enginePower;
     this.maxSpeed = maxSpeed;
+    this.price = price;
   }
 
   findCar(): void {
