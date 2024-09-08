@@ -6,6 +6,7 @@ export class ByCar implements Seller {
   year: number;
   name: string;
   reputation: boolean;
+  priority?: string; // it does not comes form any interface it is form this class
 
   constructor(
     brand: string,

@@ -2,6 +2,7 @@ interface Car {
   readonly brand: string;
   readonly model: string;
   readonly year?: number;
+  readonly location?: string;
 }
 
 export interface Seller extends Car {
@@ -17,4 +18,5 @@ export type myCarInfo = {
   readonly year: number;
   readonly name: string;
   readonly reputation: boolean;
+  readonly location?: string;
 };
