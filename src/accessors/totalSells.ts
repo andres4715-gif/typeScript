@@ -1,4 +1,9 @@
 import { Account } from './sells';
 
-const account = new Account(20, 4);
-console.log(account.applyCommission());
+class LoginAccount extends Account {
+  applyCommission(): number {
+    return this.getAmount + this.getCommission;
+  }
+}
+
+export default LoginAccount;

@@ -22,3 +22,5 @@ const employee = new Employee(
 );
 
 employee.toBePromoted();
+const employeeData = employee.showData();
+console.log(`---😎 Employee Name: ${employeeData}`);

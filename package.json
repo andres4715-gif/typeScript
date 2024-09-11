@@ -10,7 +10,7 @@
     "types": "node dist/types/usingTypes.js",
     "several_types": "node dist/types/usingSeveralTypes.js",
     "interface": "node dist/interfaces/buyingNewCar.js",
-    "accessors": "node dist/accessors/totalSells.js",
+    "accessors": "node dist/accessors/main.js",
     "abstractClass": "node dist/abstractClass/buyCar.js",
     "abstractClassWithProperties": "node dist/abstractClass/for_properties/employee.js"
   },

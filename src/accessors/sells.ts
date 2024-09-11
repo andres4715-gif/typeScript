@@ -1,4 +1,4 @@
-export class Account {
+export abstract class Account {
   private amount: number;
   private commission: number;
 
@@ -15,7 +15,5 @@ export class Account {
     return this.commission;
   }
 
-  applyCommission(): number {
-    return this.getAmount + this.getCommission;
-  }
+  abstract applyCommission(): number;
 }
