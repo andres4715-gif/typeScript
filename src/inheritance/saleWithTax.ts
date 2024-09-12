@@ -1,15 +1,20 @@
 import { Sale } from './sales';
 
 export class SaleWithTax extends Sale {
-  protected finalSellAmount: number;
+  protected taxes: number;
 
-  constructor(finalSellAmount: number, amount: number) {
-    super(amount);
-    this.finalSellAmount = finalSellAmount;
+  constructor(taxes: number, sellAmount: number) {
+    super(sellAmount);
+    this.taxes = taxes;
   }
 
   makingSaleWithTask(): number {
-    const addition = this.amount;
+    const finalCalculation = this.calculation();
+    return finalCalculation;
+  }
+
+  calculation() {
+    const addition: number = this.sellAmount * this.taxes + this.sellAmount;
     return addition;
   }
 }

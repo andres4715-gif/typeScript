@@ -1,12 +1,12 @@
 export class Sale {
-  protected amount: number = 0;
+  protected sellAmount: number;
 
-  constructor(amount: number) {
-    this.amount = amount;
+  constructor(sellAmount: number) {
+    this.sellAmount = sellAmount;
   }
 
   selling(): number {
-    return this.amount;
+    return this.sellAmount;
   }
 }
 
