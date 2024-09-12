@@ -14,8 +14,9 @@ export class SaleWithTax extends Sale {
   }
 
   calculation() {
-    const addition: number = this.sellAmount * this.taxes + this.sellAmount;
-    return addition;
+    const data = this.selling();
+    const finalCalculation: number = data * this.taxes + data;
+    return finalCalculation;
   }
 }
 
