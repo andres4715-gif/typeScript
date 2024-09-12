@@ -1,6 +1,6 @@
 import { SaleWithTax } from './saleWithTax';
 
-let sale1 = 20;
+const sale1 = 20;
 const tax = 0.19;
 
 const saleWithTask = new SaleWithTax(tax, sale1);
