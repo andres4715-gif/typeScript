@@ -11,9 +11,9 @@ export abstract class Account {
     return this.amount;
   }
 
-  get getCommission(): number {
-    return this.commission;
-  }
+  // get getCommission(): number {
+  //   return this.commission;
+  // }
 
   // get getCommission(): number {
   //   return this.commission;
