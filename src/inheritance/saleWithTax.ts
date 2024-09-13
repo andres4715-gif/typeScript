@@ -9,12 +9,12 @@ export class SaleWithTax extends Sale {
   }
 
   makingSaleWithTask(): number {
-    const finalCalculation = this.calculation();
+    const finalCalculation: number = this.calculation();
     return finalCalculation;
   }
 
-  calculation() {
-    const data = this.selling();
+  calculation(): number {
+    const data: number = this.selling();
     const finalCalculation: number = data * this.taxes + data;
     return finalCalculation;
   }
