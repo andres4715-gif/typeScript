@@ -17,6 +17,3 @@ export abstract class Account {
 
   abstract applyCommission(): number;
 }
-
-// adding new things
-// tres form master
