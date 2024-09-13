@@ -1,9 +1,9 @@
 import { SaleWithTax } from './saleWithTax';
 
-const sale1 = 20;
-const tax = 0.19;
+const sale = 20;
+const tax = 10;
 
-const saleWithTask = new SaleWithTax(tax, sale1);
-const finalFinal = saleWithTask.makingSaleWithTask();
-console.log('--- Initial Sale: ', sale1);
+const saleWithTask = new SaleWithTax(tax, sale);
+const finalFinal: number = saleWithTask.makingSaleWithTask();
+console.log('--- Initial Sale: ', sale);
 console.log('--- ✅ Total Sale with tax: ', finalFinal);

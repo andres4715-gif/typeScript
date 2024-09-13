@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tsc-watch": "tsc --watch",
+    "tsc_watch": "tsc --watch",
     "test": "npx ts-node src/index.ts",
     "inheritance": "node dist/inheritance/index.js",
     "types": "node dist/types/usingTypes.js",
