@@ -2,9 +2,17 @@ export type carData = {
   brand: string;
   model: string;
   year: number;
-  hashBack: boolean;
+  type: string;
   color: string;
   enginePower: number;
   maxSpeed: number;
   price: number;
+};
+
+export type requirement = {
+  brand: string;
+  model: string;
+  color: string;
+  mileage?: number;
+  year: number;
 };

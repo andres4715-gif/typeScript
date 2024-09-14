@@ -21,6 +21,6 @@ const employee = new Employee(
   data.salary
 );
 
-employee.toBePromoted();
+employee.toBePromoted(0);
 const employeeData = employee.showData();
 console.log(`---😎 Employee Name: ${employeeData}`);

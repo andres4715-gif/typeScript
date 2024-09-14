@@ -3,22 +3,24 @@ Is possible to have abstract properties and methods
 - for abstract properties is not necessary to add this on the constructor 
 */
 
-export abstract class Vehicle {
+abstract class Vehicle {
   readonly brand: string;
   readonly model: string;
   readonly year: number;
-  readonly hashBack: boolean;
+  readonly type: string;
 
-  constructor(brand: string, model: string, year: number, hasBack: boolean) {
+  constructor(brand: string, model: string, year: number, type: string) {
     this.brand = brand;
     this.model = model;
     this.year = year;
-    this.hashBack = hasBack;
+    this.type = type;
   }
 
   displayCarData(): string {
-    return this.model;
+    return `${this.brand} ${this.model}`;
   }
 
-  abstract findCar(brand: string): void;
+  abstract carAvailability(brand: string): void;
 }
+
+export default Vehicle;

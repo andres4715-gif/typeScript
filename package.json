@@ -12,7 +12,7 @@
     "interface": "node dist/interfaces_and_enums/buyingNewCar.js",
     "accessors_private": "node dist/accessors/abstract_class_private/main.js",
     "accessors_protected": "node dist/accessors/abstract_class_protected/main.js",
-    "abstractClass": "node dist/abstractClass/buyCar.js",
+    "abstractClassConstructor": "node dist/abstractClass/buyCar/buyCar.js",
     "abstractClassWithProperties": "node dist/abstractClass/for_properties/employee.js"
   },
   "keywords": [],

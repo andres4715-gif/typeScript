@@ -1,4 +1,4 @@
-import LoginAccount from './loginAccount';
+import LoginAccount from './LoginAccount';
 
 class Intermediate extends LoginAccount {
   myMethod() {
