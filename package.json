@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tsc_watch": "tsc --watch",
+    "tsc --watch": "tsc --watch",
     "test": "npx ts-node src/index.ts",
     "inheritance": "node dist/inheritance/index.js",
     "types": "node dist/types/usingTypes.js",
     "several_types": "node dist/types/usingSeveralTypes.js",
     "interface": "node dist/interfaces_and_enums/buyingNewCar.js",
-    "accessors": "node dist/accessors/main.js",
+    "accessors_private": "node dist/accessors/abstract_class_private/main.js",
+    "accessors_protected": "node dist/accessors/abstract_class_protected/main.js",
     "abstractClass": "node dist/abstractClass/buyCar.js",
     "abstractClassWithProperties": "node dist/abstractClass/for_properties/employee.js"
   },
