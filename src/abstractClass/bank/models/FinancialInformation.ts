@@ -24,3 +24,5 @@ class FinancialInformation {
   withdrawals: Withdrawal[];
   planType: string;
 }
+
+export default FinancialInformation;
