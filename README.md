@@ -1,6 +1,6 @@
 # TypeScript
-![image](https://github.com/user-attachments/assets/eb22d606-3eb1-430a-8395-2e13df53a169)
 
+![image](https://github.com/user-attachments/assets/eb22d606-3eb1-430a-8395-2e13df53a169)
 
 ### How to run JSON SERVER (keep in mind the path to be used)
 
@@ -11,7 +11,7 @@ Using npm scripts:
 $ npm run server
 
 Pass it to JSON Server CLI
-$ npx json-server src/data/db.json -p 3000 --watch
+$ npx json-server data/db.json -p 3000 --watch
 ```
 
 Response:
