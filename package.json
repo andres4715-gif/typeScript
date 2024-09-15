@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "tsc --watch": "tsc --watch",
+    "server": "npx json-server data/db.json -p 3000 --watch",
     "test": "npx ts-node src/index.ts",
     "inheritance": "node dist/inheritance/index.js",
     "types": "node dist/types/usingTypes.js",
@@ -19,6 +20,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "json-server": "^1.0.0-beta.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4"
   }
