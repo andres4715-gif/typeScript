@@ -3,7 +3,7 @@ import Withdrawal from './Withdrawal';
 
 class FinancialInformation {
   constructor(
-    persona: Persona[],
+    persona: Persona,
     dateOfJoining: string,
     dateOfWithdrawal: string,
     availableBalance: number,
@@ -17,7 +17,7 @@ class FinancialInformation {
     this.withdrawals = withdrawals;
     this.planType = planType;
   }
-  persona: Persona[];
+  persona: Persona;
   dateOfJoining: string;
   dateOfWithdrawal: string;
   availableBalance: number;

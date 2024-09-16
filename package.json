@@ -16,7 +16,8 @@
     "accessors_private": "node dist/accessors/abstract_class_private/main.js",
     "accessors_protected": "node dist/accessors/abstract_class_protected/main.js",
     "abstractClassConstructor": "node dist/abstractClass/buyCar/buyCar.js",
-    "abstractClassWithProperties": "node dist/abstractClass/for_properties/employee.js"
+    "abstractClassWithProperties": "node dist/abstractClass/for_properties/employee.js",
+    "httpRequestWithModels": "node dist/abstractClass/bank/services/GetCreditCard.js"
   },
   "keywords": [],
   "author": "",
