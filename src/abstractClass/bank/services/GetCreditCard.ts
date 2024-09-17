@@ -10,16 +10,17 @@ const accountRequest = async () => {
   const jsonData = await response.json();
 
   const accountDataResponse = jsonData.map((data: IAccount) => {
-    // Getting withdrawals
-    const withdrawals = data.withdrawals.map(
-      (w: IWithdrawal) => new Withdrawal(w.date, w.amount)
-    );
-
     // Getting Persona
     const persona: IPersona = new Persona(
       data.id,
       data.firstName,
       data.lastName
+    );
+
+    // Getting withdrawals
+    const withdrawals = data.withdrawals.map(
+      (_withdrawal: IWithdrawal) =>
+        new Withdrawal(_withdrawal.date, _withdrawal.amount)
     );
 
     return new Account(

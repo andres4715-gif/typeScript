@@ -9,10 +9,7 @@ export interface IPersona {
   lastName: string;
 }
 
-export interface IAccount {
-  id: string;
-  firstName: string;
-  lastName: string;
+export interface IAccount extends IPersona, IWithdrawal {
   dateOfJoining: string;
   dateOfWithdrawal: string;
   availableBalance: number;
