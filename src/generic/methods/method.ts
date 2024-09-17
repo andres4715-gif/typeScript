@@ -6,6 +6,7 @@ const myObject = {
   firstName: 'Andres',
   lastName: 'Rios',
   bank: 'Bank XXX',
+  city: 'Canada',
 };
 
 const data1 = gettingData('Hello world!!'); // Sending a string.
