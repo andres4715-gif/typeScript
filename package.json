@@ -9,15 +9,15 @@
     "test": "npx ts-node src/index.ts",
     "inheritance": "node dist/inheritance/index.js",
     "types": "node dist/types/car/usingTypes.js",
-    "typeCreditCardApiCallService": "node dist/types/apiCalls/bank/services/ServiceApi.js",
     "several_types": "node dist/types/usingSeveralTypes.js",
+    "typeCreditCardApiCallService": "node dist/types/apiCalls/bank/services/ServiceApi.js",
+    "typesHttpRequestWithModels": "node dist/types/bank/services/GetCreditCard.js",
     "interface": "node dist/interfaces_and_enums/car/buyingNewCar.js",
     "interfaceCreditCardApiCallService": "node dist/interfaces_and_enums/apiCalls/bank/ServiceApi.js",
     "accessors_private": "node dist/accessors/abstract_class_private/main.js",
     "accessors_protected": "node dist/accessors/abstract_class_protected/main.js",
     "abstractClassConstructor": "node dist/abstractClass/buyCar/buyCar.js",
-    "abstractClassWithProperties": "node dist/abstractClass/for_properties/employee.js",
-    "httpRequestWithModels": "node dist/abstractClass/bank/services/GetCreditCard.js"
+    "abstractClassWithProperties": "node dist/abstractClass/for_properties/employee.js"
   },
   "keywords": [],
   "author": "",
