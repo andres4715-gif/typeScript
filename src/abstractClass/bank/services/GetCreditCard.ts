@@ -38,4 +38,8 @@ const accountRequest = async () => {
   }
 };
 
-accountRequest();
+const main = () => {
+  accountRequest();
+};
+
+main();
