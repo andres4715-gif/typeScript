@@ -1,7 +1,14 @@
 import Persona from './Persona';
 import Withdrawal from './Withdrawal';
 
-class FinancialInformation {
+class Account {
+  persona: Persona;
+  dateOfJoining: string;
+  dateOfWithdrawal: string;
+  availableBalance: number;
+  withdrawals: Withdrawal[];
+  planType: string;
+
   constructor(
     persona: Persona,
     dateOfJoining: string,
@@ -17,12 +24,6 @@ class FinancialInformation {
     this.withdrawals = withdrawals;
     this.planType = planType;
   }
-  persona: Persona;
-  dateOfJoining: string;
-  dateOfWithdrawal: string;
-  availableBalance: number;
-  withdrawals: Withdrawal[];
-  planType: string;
 }
 
-export default FinancialInformation;
+export default Account;

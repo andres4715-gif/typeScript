@@ -1,19 +1,28 @@
-import FinancialInformation from '../models/FinancialInformation';
+import Account from '../models/Account';
 import Persona from '../models/Persona';
 import Withdrawal from '../models/Withdrawal';
+import { IWithdrawal, IPersona, IAccount } from '../interfaces/interfaces';
 
-const creditCardRequest = async () => {
-  const response = await fetch('http://localhost:3000/creditCard');
-  const dataResponse = await response.json();
+const accountRequest = async () => {
+  const response = await fetch('http://localhost:3000/creditCard', {
+    method: 'GET',
+  });
+  const jsonData = await response.json();
 
-  const financialInformationResponse = dataResponse.map((data: any) => {
+  const financialInformationResponse = jsonData.map((data: IAccount) => {
+    // Getting withdrawals
     const withdrawals = data.withdrawals.map(
-      (w: any) => new Withdrawal(w.date, w.amount)
+      (w: IWithdrawal) => new Withdrawal(w.date, w.amount)
     );
 
-    const persona = new Persona(data.id, data.firstName, data.lastName);
+    // Getting Persona
+    const persona: IPersona = new Persona(
+      data.id,
+      data.firstName,
+      data.lastName
+    );
 
-    return new FinancialInformation(
+    return new Account(
       persona,
       data.dateOfJoining,
       data.dateOfWithdrawal,
@@ -25,8 +34,8 @@ const creditCardRequest = async () => {
 
   for (const key in financialInformationResponse) {
     const myResponse = financialInformationResponse[key];
-    console.log('>>>>>>>', myResponse.persona.id);
+    console.log('--- ✅ id:', myResponse.persona.id);
   }
 };
 
-creditCardRequest();
+accountRequest();
