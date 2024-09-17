@@ -9,7 +9,7 @@ const accountRequest = async () => {
   });
   const jsonData = await response.json();
 
-  const financialInformationResponse = jsonData.map((data: IAccount) => {
+  const accountDataResponse = jsonData.map((data: IAccount) => {
     // Getting withdrawals
     const withdrawals = data.withdrawals.map(
       (w: IWithdrawal) => new Withdrawal(w.date, w.amount)
@@ -32,8 +32,8 @@ const accountRequest = async () => {
     );
   });
 
-  for (const key in financialInformationResponse) {
-    const myResponse = financialInformationResponse[key];
+  for (const key in accountDataResponse) {
+    const myResponse = accountDataResponse[key];
     console.log('--- ✅ id:', myResponse.persona.id);
   }
 };
