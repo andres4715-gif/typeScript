@@ -20,6 +20,7 @@ const data6 = gettingData(myObject); // Sending an object.
 console.log('Data 1: ', typeof data1);
 console.log('Data 2: ', typeof data2);
 console.log('Data 3: ', typeof data3);
+console.log('Data 3: ', data3);
 console.log('Data 4: ', typeof data4);
 console.log('Data 5: ', typeof data5);
 console.log('Data 6: ', typeof data6);
