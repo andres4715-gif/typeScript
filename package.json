@@ -18,7 +18,9 @@
     "accessors_protected": "node dist/accessors/abstract_class_protected/main.js",
     "abstractClassConstructor": "node dist/abstractClass/buyCar/buyCar.js",
     "abstractClassWithProperties": "node dist/abstractClass/for_properties/employee.js",
-    "genericMethod": "node dist/generic/methods/method.js"
+    "genericMethod": "node dist/generic/methods/method.js",
+    "genericInterfaces": "node dist/generic/interfaces/interface.js",
+    "genericClasses": "node dist/generic/classes/Burger.js"
   },
   "keywords": [],
   "author": "",
