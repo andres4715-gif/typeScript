@@ -1,9 +1,11 @@
-import { ICreditCard } from './interfaces/interfaces';
+import { ICreditCard, IPost } from './interfaces/interfaces';
+
+type dataType = ICreditCard | IPost;
 
 class FinancialInformation {
-  private items: ICreditCard[] = [];
+  private items: dataType[] = [];
 
-  addItem(newCreditCard: ICreditCard): void {
+  addItem(newCreditCard: dataType): void {
     this.items.push(newCreditCard);
   }
 

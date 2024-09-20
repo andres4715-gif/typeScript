@@ -1,5 +1,5 @@
 import FinancialInformation from './DataCollection';
-import { ICreditCard } from './interfaces/interfaces';
+import { ICreditCard, IPost } from './interfaces/interfaces';
 
 /*exercise:
 https://www.youtube.com/watch?v=SKvd4n4rVKw&t=601s
@@ -16,7 +16,8 @@ http://localhost:3000/creditCard
 4- Remove new data added using delete http request
 */
 
-const financialInformation = new FinancialInformation();
+const creditCard = new FinancialInformation();
+const post = new FinancialInformation();
 
 const newCreditCard: ICreditCard = {
   id: '123e4567-e89b-12d3-a456-454546576767',
@@ -38,5 +39,22 @@ const newCreditCard: ICreditCard = {
   planType: 'BASIC ADVANCE',
 };
 
-financialInformation.addItem(newCreditCard);
-financialInformation.getItemAdded();
+const newPost: IPost = {
+  id: 'mN9o0pQ1rS2tU3vW',
+  title: 'A better life',
+  views: 300,
+  author: {
+    description: 'Developer engaged',
+    firstName: 'Max',
+    lastName: 'Vina',
+    id: 'tYpIcOdE',
+  },
+};
+
+// Credit Card
+creditCard.addItem(newCreditCard);
+creditCard.getItemAdded();
+
+// Posts
+post.addItem(newPost);
+post.getItemAdded();

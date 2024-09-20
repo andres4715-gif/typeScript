@@ -16,3 +16,17 @@ export interface ICreditCard extends IPersona {
   availableBalance: number;
   planType: string;
 }
+
+export interface IPost {
+  id: string;
+  title: string;
+  views: number;
+  author: IAuthor;
+}
+
+interface IAuthor {
+  description: string;
+  firstName: string;
+  lastName: string;
+  id: string;
+}
