@@ -11,7 +11,7 @@ class FinancialInformation {
 
   getItemAdded() {
     console.log(
-      `--- ✅✅✅ New Credit card data: \n`,
+      `--- ✅✅✅ New data to be added: \n`,
       JSON.stringify(this.items, null, 2)
     );
   }
