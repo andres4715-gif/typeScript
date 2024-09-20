@@ -40,7 +40,7 @@ const newCreditCard: ICreditCard = {
 };
 
 const newPost: IPost = {
-  id: 'mN9o0pQ1rS2tU3vW',
+  id: 'mN9o0pQ1rS2t45yu',
   title: 'A better life',
   views: 300,
   author: {
