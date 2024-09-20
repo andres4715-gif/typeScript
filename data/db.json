@@ -488,6 +488,28 @@
         }
       ],
       "planType": "Basic"
+    },
+    {
+      "0": {
+        "id": "123e4567-e89b-12d3-a456-454546576767",
+        "firstName": "Otalvaro",
+        "lastName": "Doe third",
+        "dateOfJoining": "2015-06-15",
+        "dateOfWithdrawal": "2023-01-10",
+        "availableBalance": 57886,
+        "withdrawals": [
+          {
+            "date": "2023-01-05",
+            "amount": 150
+          },
+          {
+            "date": "2023-01-08",
+            "amount": 200
+          }
+        ],
+        "planType": "BASIC ADVANCE"
+      },
+      "id": "3842"
     }
   ]
 }
