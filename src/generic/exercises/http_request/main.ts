@@ -1,5 +1,5 @@
 import FinancialInformation from './DataCollection';
-import { ICreditCard, IPost } from './interfaces/interfaces';
+import { ICreditCard, IPost, IComment } from './interfaces/interfaces';
 
 /*exercise:
 https://www.youtube.com/watch?v=SKvd4n4rVKw&t=601s
@@ -18,6 +18,7 @@ http://localhost:3000/creditCard
 
 const creditCard = new FinancialInformation();
 const post = new FinancialInformation();
+const comment = new FinancialInformation();
 
 const newCreditCard: ICreditCard = {
   id: '123e4567-e89b-12d3-a456-454546576767',
@@ -51,6 +52,18 @@ const newPost: IPost = {
   },
 };
 
+const newComment: IComment = {
+  id: '4sD5fG6hJ7k45t56',
+  text: 'comment 1',
+  postId: 'abc',
+  author: {
+    name: 'Juana',
+    lastName: 'Montoya',
+    city: 'Mexico',
+    description: 'Developer in process',
+  },
+};
+
 // Credit Card
 creditCard.addItem(newCreditCard);
 creditCard.getItemAdded();
@@ -58,3 +71,7 @@ creditCard.getItemAdded();
 // Posts
 post.addItem(newPost);
 post.getItemAdded();
+
+// comment:
+comment.addItem(newComment);
+comment.getItemAdded();

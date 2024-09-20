@@ -30,3 +30,17 @@ interface IAuthor {
   lastName: string;
   id: string;
 }
+
+export interface IComment {
+  id: string;
+  text: string;
+  postId: string;
+  author: IAuthorComment;
+}
+
+interface IAuthorComment {
+  name: string;
+  lastName: string;
+  city: string;
+  description: string;
+}

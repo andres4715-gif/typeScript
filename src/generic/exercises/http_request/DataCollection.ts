@@ -1,11 +1,7 @@
-import { ICreditCard, IPost } from './interfaces/interfaces';
+class FinancialInformation<T> {
+  private items: T[] = [];
 
-type dataType = ICreditCard | IPost;
-
-class FinancialInformation {
-  private items: dataType[] = [];
-
-  addItem(newCreditCard: dataType): void {
+  addItem(newCreditCard: T): void {
     this.items.push(newCreditCard);
   }
 
