@@ -44,3 +44,7 @@ interface IAuthorComment {
   city: string;
   description: string;
 }
+
+export interface ISendingData<T> {
+  addItem(newItem: T): void;
+}

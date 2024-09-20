@@ -1,8 +1,10 @@
-class FinancialInformation<T> {
+import { ISendingData } from './interfaces/interfaces';
+
+class FinancialInformation<T> implements ISendingData<T> {
   private items: T[] = [];
 
-  addItem(newCreditCard: T): void {
-    this.items.push(newCreditCard);
+  addItem(newData: T): void {
+    this.items.push(newData);
   }
 
   getItemAdded() {
