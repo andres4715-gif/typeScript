@@ -20,7 +20,8 @@
     "abstractClassWithProperties": "node dist/abstractClass/for_properties/employee.js",
     "genericMethod": "node dist/generic/methods/method.js",
     "genericInterfaces": "node dist/generic/interfaces/interface.js",
-    "genericClasses": "node dist/generic/classes/Burger.js"
+    "genericClasses": "node dist/generic/classes/Burger.js",
+    "genericExerciseHttp": "node dist/generic/exercises/http_request/main.js"
   },
   "keywords": [],
   "author": "",
