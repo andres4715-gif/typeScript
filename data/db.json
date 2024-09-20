@@ -269,6 +269,44 @@
           "partial_update"
         ]
       }
+    },
+    {
+      "id": "aB1cDAAA",
+      "name": "Andres Rios",
+      "age": 23,
+      "address": {
+        "street": "Calle Falsa 123",
+        "city": "Madrid",
+        "neighborhood": "Centro"
+      },
+      "access": {
+        "level": "administrator",
+        "permissions": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    },
+    {
+      "id": "aB1cRUUU",
+      "name": "Carlos Estrada",
+      "age": 23,
+      "address": {
+        "street": "Calle Falsa 123",
+        "city": "Madrid",
+        "neighborhood": "Centro"
+      },
+      "access": {
+        "level": "administrator",
+        "permissions": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
     }
   ],
   "creditCard": [
@@ -431,6 +469,47 @@
         }
       ],
       "planType": "PREMIUM ADVANCE +"
+    },
+    {
+      "id": "123e4567-e89b-12d3-a456-7878676767",
+      "firstName": "Sandra",
+      "lastName": "Omagues Ocoto",
+      "dateOfJoining": "2013-06-15",
+      "dateOfWithdrawal": "2023-01-10",
+      "availableBalance": 100000.75,
+      "withdrawals": [
+        {
+          "date": "2023-01-05",
+          "amount": 300000
+        },
+        {
+          "date": "2023-01-08",
+          "amount": 4000
+        }
+      ],
+      "planType": "Basic"
+    },
+    {
+      "0": {
+        "id": "123e4567-e89b-12d3-a456-454546576767",
+        "firstName": "Otalvaro",
+        "lastName": "Doe third",
+        "dateOfJoining": "2015-06-15",
+        "dateOfWithdrawal": "2023-01-10",
+        "availableBalance": 57886,
+        "withdrawals": [
+          {
+            "date": "2023-01-05",
+            "amount": 150
+          },
+          {
+            "date": "2023-01-08",
+            "amount": 200
+          }
+        ],
+        "planType": "BASIC ADVANCE"
+      },
+      "id": "3842"
     }
   ]
 }
