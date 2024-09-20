@@ -4,8 +4,7 @@ import { ICreditCard, IPost, IComment } from './interfaces/interfaces';
 /*exercise:
 https://www.youtube.com/watch?v=SKvd4n4rVKw&t=601s
 
-1- Create a generic class to address interfaces 
-for existing API service:
+1- Create a generic class to address interfaces for existing API service:
 http://localhost:3000/posts/
 http://localhost:3000/comments/
 http://localhost:3000/profile/
