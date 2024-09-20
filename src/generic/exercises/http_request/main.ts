@@ -16,9 +16,9 @@ http://localhost:3000/creditCard
 4- Remove new data added using delete http request
 */
 
-const creditCard = new FinancialInformation();
-const post = new FinancialInformation();
-const comment = new FinancialInformation();
+const creditCard = new FinancialInformation<ICreditCard>();
+const post = new FinancialInformation<IPost>();
+const comment = new FinancialInformation<IComment>();
 
 const newCreditCard: ICreditCard = {
   id: '123e4567-e89b-12d3-a456-454546576767',
