@@ -1,4 +1,4 @@
-import { Account } from './sells';
+import Account from './sells';
 
 class LoginAccount extends Account {
   applyCommission(): number {

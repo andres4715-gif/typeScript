@@ -1,4 +1,4 @@
-export abstract class Account {
+abstract class Account {
   private amount: number;
   private commission: number;
 
@@ -17,3 +17,5 @@ export abstract class Account {
 
   abstract applyCommission(): number;
 }
+
+export default Account;
