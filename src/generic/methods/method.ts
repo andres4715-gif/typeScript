@@ -9,12 +9,16 @@ const myObject = {
   city: 'Canada',
 };
 
-const data1 = gettingData('Hello world!!'); // Sending a string.
-const data2 = gettingData(8); // Sending a number.
-const data3 = gettingData({ name: 'Juan', lastName: 'Estrada', age: 45 }); // Sending an object.
-const data4 = gettingData([2, 3, 4, 5, 6]); // Sending an object (ARRAY):
-const data5 = gettingData(true); // Sending a boolean
-const data6 = gettingData(myObject); // Sending an object.
+const data1 = gettingData<string>('Hello world!!'); // Sending a string.
+const data2 = gettingData<number>(8); // Sending a number.
+const data3 = gettingData<object>({
+  name: 'Juan',
+  lastName: 'Estrada',
+  age: 45,
+}); // Sending an object.
+const data4 = gettingData<object>([2, 3, 4, 5, 6]); // Sending an object (ARRAY):
+const data5 = gettingData<boolean>(true); // Sending a boolean
+const data6 = gettingData<object>(myObject); // Sending an object.
 
 // Printing:
 console.log('Data 1: ', typeof data1);
