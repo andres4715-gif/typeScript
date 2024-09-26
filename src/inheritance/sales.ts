@@ -1,4 +1,4 @@
-export class Sale {
+class Sale {
   protected sellAmount: number;
 
   constructor(sellAmount: number) {

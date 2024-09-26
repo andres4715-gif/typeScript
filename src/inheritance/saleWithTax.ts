@@ -1,6 +1,6 @@
-import { Sale } from './sales';
+import Sale from './sales';
 
-export class SaleWithTax extends Sale {
+class SaleWithTax extends Sale {
   protected taxes: number;
 
   constructor(taxes: number, sellAmount: number) {

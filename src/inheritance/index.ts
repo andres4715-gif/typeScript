@@ -1,4 +1,4 @@
-import { SaleWithTax } from './saleWithTax';
+import SaleWithTax from './saleWithTax';
 
 const sale = 20;
 const tax = 10;
