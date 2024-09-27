@@ -1,16 +1,23 @@
-import Furniture from './models/furniture';
 import { TFurniture } from './types/type';
+import Device from './device';
 
 const furniture: TFurniture = {
   brand: 'Xiaomi',
+  name: 'vacuum cleaner',
   color: 'write',
   weight: 2,
   action: 'sweep',
   type: 'battery',
-  price: {
-    size: 'small',
-    price: 200,
-  },
+  price: [
+    {
+      size: 'small',
+      finalPrice: 200,
+    },
+    {
+      size: 'big',
+      finalPrice: 350,
+    },
+  ],
   button: {
     start: true,
     on: true,
@@ -18,14 +25,18 @@ const furniture: TFurniture = {
   },
 };
 
-const furniture1 = new Furniture(
+const furniture1 = new Device(
   furniture.brand,
+  furniture.name,
   furniture.color,
   furniture.weight,
   furniture.action,
   furniture.type,
-  furniture.price,
+  furniture.price[0],
   furniture.button
 );
 
-console.log(`--- 🚀 The obtained furniture is: ${furniture1.brand}`);
+console.log(`🚀 Furniture: ${furniture1?.getBrand()}, ${furniture1.getName()}`);
+console.log(`🚀 Furniture price: ${furniture1?.getPrice().finalPrice}`);
+furniture1.sweeping();
+furniture1.charging();

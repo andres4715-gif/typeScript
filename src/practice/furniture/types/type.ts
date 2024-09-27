@@ -1,20 +1,21 @@
 export type TFurniture = {
-  brand: string;
-  color: string;
-  weight: number;
-  action: string;
-  type: string;
-  price: TPrice;
-  button: TButton;
+  readonly brand: string;
+  readonly name: string;
+  readonly color: string;
+  readonly weight: number;
+  readonly action: string;
+  readonly type: string;
+  readonly price: TPrice[];
+  readonly button: TButton;
 };
 
 type TPrice = {
-  size: string;
-  price: number;
+  readonly size: string;
+  readonly finalPrice: number;
 };
 
 type TButton = {
-  start: boolean;
-  on: boolean;
-  off: boolean;
+  readonly start: boolean;
+  readonly on: boolean;
+  readonly off: boolean;
 };

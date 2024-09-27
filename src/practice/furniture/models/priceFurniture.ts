@@ -1,11 +1,11 @@
-class PriceFurniture {
+class Price {
   size: string;
-  price: number;
+  finalPrice: number;
 
-  constructor(size: string, price: number) {
+  constructor(size: string, finalPrice: number) {
     this.size = size;
-    this.price = price;
+    this.finalPrice = finalPrice;
   }
 }
 
-export default PriceFurniture;
+export default Price;
