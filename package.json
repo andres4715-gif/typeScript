@@ -21,7 +21,8 @@
     "genericMethod": "node dist/generic/methods/method.js",
     "genericInterfaces": "node dist/generic/interfaces/interface.js",
     "genericClasses": "node dist/generic/classes/Burger.js",
-    "genericExerciseHttp": "node dist/generic/exercises/http_request/main.js"
+    "genericExerciseHttp": "node dist/generic/exercises/http_request/main.js",
+    "practiceFurniture1": "node dist//practice/furniture/main.js"
   },
   "keywords": [],
   "author": "",
