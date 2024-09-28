@@ -9,7 +9,7 @@ const furniture: TFurniture = {
   action: 'sweep',
   type: 'battery',
   batteryLevel: 50,
-  status: false,
+  status: true,
   autonomy: 60,
   timeCycle: 30,
   price: [
@@ -44,6 +44,6 @@ const vacuumCleaner = new Device(
   furniture.button
 );
 
-console.log(`🚀 ${vacuumCleaner?.getBrand()}, ${vacuumCleaner.getName()}`);
 vacuumCleaner.charging();
+console.log(`🚀 ${vacuumCleaner?.getBrand()}, ${vacuumCleaner.getName()}`);
 vacuumCleaner.finalBatteryLevel();
