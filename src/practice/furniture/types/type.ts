@@ -5,6 +5,10 @@ export type TFurniture = {
   readonly weight: number;
   readonly action: string;
   readonly type: string;
+  readonly batteryLevel: number;
+  readonly status: boolean;
+  readonly autonomy: number;
+  readonly timeCycle: number;
   readonly price: TPrice[];
   readonly button: TButton;
 };

@@ -8,6 +8,10 @@ const furniture: TFurniture = {
   weight: 2,
   action: 'sweep',
   type: 'battery',
+  batteryLevel: 50,
+  status: false,
+  autonomy: 60,
+  timeCycle: 30,
   price: [
     {
       size: 'small',
@@ -25,18 +29,21 @@ const furniture: TFurniture = {
   },
 };
 
-const furniture1 = new Device(
+const vacuumCleaner = new Device(
   furniture.brand,
   furniture.name,
   furniture.color,
   furniture.weight,
   furniture.action,
   furniture.type,
+  furniture.batteryLevel,
+  furniture.status,
+  furniture.autonomy,
+  furniture.timeCycle,
   furniture.price[0],
   furniture.button
 );
 
-console.log(`🚀 Furniture: ${furniture1?.getBrand()}, ${furniture1.getName()}`);
-console.log(`🚀 Furniture price: ${furniture1?.getPrice().finalPrice}`);
-furniture1.sweeping();
-furniture1.charging();
+console.log(`🚀 ${vacuumCleaner?.getBrand()}, ${vacuumCleaner.getName()}`);
+vacuumCleaner.charging();
+vacuumCleaner.finalBatteryLevel();

@@ -8,6 +8,10 @@ abstract class Furniture {
   private weight: number;
   private action: string;
   private type: string;
+  private batteryLevel: number;
+  private status: boolean;
+  private autonomy: number;
+  private timeCycle: number;
   private price: PriceFurniture;
   private button: Button;
 
@@ -18,6 +22,10 @@ abstract class Furniture {
     weight: number,
     action: string,
     type: string,
+    batteryLevel: number,
+    status: boolean,
+    autonomy: number,
+    timeCycle: number,
     price: PriceFurniture,
     button: Button
   ) {
@@ -27,6 +35,10 @@ abstract class Furniture {
     this.weight = weight;
     this.action = action;
     this.type = type;
+    this.batteryLevel = batteryLevel;
+    this.status = status;
+    this.autonomy = autonomy;
+    this.timeCycle = timeCycle;
     this.price = price;
     this.button = button;
   }
@@ -55,6 +67,22 @@ abstract class Furniture {
     return this.type;
   }
 
+  public getBatteryLevel(): number {
+    return this.batteryLevel;
+  }
+
+  public getStatus(): boolean {
+    return this.status;
+  }
+
+  public getAutonomy(): number {
+    return this.autonomy;
+  }
+
+  public getTimeCycle(): number {
+    return this.timeCycle;
+  }
+
   public getPrice(): PriceFurniture {
     return this.price;
   }
@@ -63,18 +91,20 @@ abstract class Furniture {
     return this.button;
   }
 
+  // Abstract classes:
   abstract charging(): void;
 
-  private activate(): boolean {
-    if (this.getAction() === 'sweep') {
+  // Methods:
+  private disable(): boolean {
+    if (this.getStatus() === true) {
       return true;
     } else {
       return false;
     }
   }
 
-  private disable(): boolean {
-    if (this.getAction() === 'sweep') {
+  private activate(): boolean {
+    if (this.getStatus() === true) {
       return true;
     } else {
       return false;
@@ -82,10 +112,13 @@ abstract class Furniture {
   }
 
   sweeping(): boolean {
-    if (this.action === 'sweep') {
-      return this.activate();
+    let status: boolean = false;
+    if (this.getStatus() === true) {
+      status = this.activate();
+      return status;
     } else {
-      return this.disable();
+      status = this.disable();
+      return status;
     }
   }
 }
