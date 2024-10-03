@@ -121,6 +121,11 @@ abstract class Furniture {
       return status;
     }
   }
+
+  static batteryInitialLevel(): number {
+    const level: number = Math.floor(Math.random() * 100);
+    return level;
+  }
 }
 
 export default Furniture;

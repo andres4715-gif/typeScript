@@ -3,7 +3,7 @@ import Furniture from './models/furniture';
 class Device extends Furniture {
   charging(): void {
     if (this.sweeping() === true) {
-      console.log(`❌ ${this.getName()} is working discharging Battery...`);
+      console.log(`🪫🪫🪫${this.getName()} is working discharging Battery...`);
     } else {
       console.log(`✅ ${this.getName()} charging Battery...`);
     }
@@ -13,7 +13,7 @@ class Device extends Furniture {
     console.warn(`⚙️ Initial Battery level ${this.getBatteryLevel()}`);
     if (this.getStatus() !== true) {
       console.log(
-        `🔌 Charging ${this.getName()} ${this.getBatteryLevel()} +++`
+        `🔋🔋🔋 Charging ${this.getName()} ${this.getBatteryLevel()} +++`
       );
     } else {
       const batteryLevel: number = this.getBatteryLevel();
