@@ -2,7 +2,7 @@ import Furniture from './models/furniture';
 
 class Device extends Furniture {
   charging(): void {
-    if (this.sweeping() === true) {
+    if (this.working() === true) {
       console.log(`🪫🪫🪫${this.getName()} is working discharging Battery...`);
     } else {
       console.log(`✅ ${this.getName()} charging Battery...`);

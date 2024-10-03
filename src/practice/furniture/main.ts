@@ -31,6 +31,34 @@ const vacuum: TFurniture = {
   },
 };
 
+const radio: TFurniture = {
+  brand: 'LG',
+  name: 'Living room Radio',
+  color: 'Black',
+  weight: 1,
+  action: 'Reproduce Music',
+  type: 'battery',
+  batteryLevel: externalBatteryLevel,
+  status: true,
+  autonomy: 90,
+  timeCycle: 20,
+  price: [
+    {
+      size: 'small',
+      finalPrice: 100,
+    },
+    {
+      size: 'big',
+      finalPrice: 550,
+    },
+  ],
+  button: {
+    start: true,
+    on: true,
+    off: true,
+  },
+};
+
 const vacuumCleaner = new Device(
   vacuum.brand,
   vacuum.name,
@@ -46,6 +74,27 @@ const vacuumCleaner = new Device(
   vacuum.button
 );
 
+const blueToothRadio = new Device(
+  radio.brand,
+  radio.name,
+  radio.color,
+  radio.weight,
+  radio.action,
+  radio.type,
+  radio.batteryLevel,
+  radio.status,
+  radio.autonomy,
+  radio.timeCycle,
+  radio.price[0],
+  radio.button
+);
+
+// Vacuum
 vacuumCleaner.charging();
 console.log(`🚀 ${vacuumCleaner?.getBrand()}, ${vacuumCleaner.getName()}`);
 vacuumCleaner.finalBatteryLevel();
+
+// Radio
+blueToothRadio.charging();
+console.log(`🚀 ${blueToothRadio?.getBrand()}, ${blueToothRadio.getName()}`);
+blueToothRadio.finalBatteryLevel();

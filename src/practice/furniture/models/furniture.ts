@@ -111,7 +111,7 @@ abstract class Furniture {
     }
   }
 
-  sweeping(): boolean {
+  working(): boolean {
     let status: boolean = false;
     if (this.getStatus() === true) {
       status = this.activate();
