@@ -1,4 +1,4 @@
-abstract class Account {
+export default abstract class Account {
   private amount: number;
   private commission: number;
 
@@ -15,7 +15,5 @@ abstract class Account {
     return this.commission;
   }
 
-  abstract applyCommission(): number;
+  abstract applyCommission(x: number, y: number): number;
 }
-
-export default Account;
