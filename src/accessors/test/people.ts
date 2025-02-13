@@ -34,7 +34,7 @@ export class People {
     this.year = year;
   }
 
-  protected age() {
+  protected age(): void {
     const myAge = this.getYear() - this.getBirthday();
     console.log(`${this.name}: is ${myAge} years old...`);
   }

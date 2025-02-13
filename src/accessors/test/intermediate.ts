@@ -1,7 +1,7 @@
-import { People } from './people';
+import {People} from './people';
 
 export class Intermediate extends People {
-  data() {
+  data(): void {
     return this.age();
   }
 }
