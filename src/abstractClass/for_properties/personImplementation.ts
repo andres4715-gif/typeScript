@@ -36,10 +36,10 @@ class Employee extends Person {
     const fails = this.disciplinaryProcess(pendingProcess);
     if (this.area === 'production' && this.experienceTime > 3 && fails === 0) {
       const newSalary = this.salary + 100;
-      console.log(`---✅ You rock: Your new salary is: ${newSalary}`);
+      console.log(`--- ✅ You rock: Your new salary is: ${newSalary}`);
       return newSalary;
     } else {
-      console.log('---❌ You don not have any promotion right now ');
+      console.log('--- ❌ You don not have any promotion right now ');
     }
   }
 }

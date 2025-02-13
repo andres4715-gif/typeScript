@@ -1,7 +1,7 @@
 import Employee from './personImplementation';
-import { employeeData } from './types';
+import {finalData} from './types';
 
-const data: employeeData = {
+const data: finalData = {
   name: 'Juan',
   lastName: 'Perez',
   years: 43,
