@@ -5,4 +5,4 @@ const intermediate = new Intermediate();
 
 intermediate.printAddition();
 const data2 = intermediate.myMethod();
-console.log(data2);
+console.log(`🚀 MyMethod value: ${data2}`);

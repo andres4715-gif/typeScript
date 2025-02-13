@@ -1,15 +1,11 @@
 import LoginAccount from './LoginAccount';
 
-class Intermediate extends LoginAccount {
-  myMethod() {
-    const data = this.applyCommission();
-    return data;
+export default class Intermediate extends LoginAccount {
+  myMethod(): number {
+    return this.applyCommission()
   }
 
   printAddition() {
-    const myAddition = this.addition();
-    return myAddition;
+    return this.addition();
   }
 }
-
-export default Intermediate;
